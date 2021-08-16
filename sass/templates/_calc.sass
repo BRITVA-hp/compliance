@@ -1,0 +1,81 @@
+.calc
+    padding-top: 150px
+    padding-bottom: 150px
+    background-image: url(../img/calc/bg.png)
+    background-repeat: no-repeat
+    background-position-x: right
+    background-position-y: center
+    position: relative
+    z-index: -2
+    &__img
+        position: absolute
+        left: 0
+        top: 50%
+        transform: translateY(-50%)
+        z-index: -1
+    &__total
+        font-size: 35px
+        font-family: 'Montserrat-900'
+        span
+            color: #CC0609
+            margin-left: 50px
+    &__row
+        margin-bottom: 44px
+    &__card
+        padding-bottom: 60px
+        padding-top: 46px
+        text-align: center
+        width: 365px
+        margin-right: 20px
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 10px
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            width: 355px
+            height: 100%
+            left: 50%
+            bottom: -10px
+            border-radius: 10px
+            transform: translateX(-50%)
+            z-index: -1
+        &--1
+            background-color: #EAEFFF
+            &::before
+                background-color: #EAEFFF
+        &--2
+            background-color: #101C51
+            color: #fff
+            &::before
+                background-color: #101C51
+        &:last-of-type
+            margin-right: 0
+        &__title
+            font-size: 30px
+            font-family: 'Montserrat-900'
+            margin-bottom: 50px
+    &__wrap
+        padding-bottom: 60px
+        &--card
+            display: flex
+    &__row
+        align-items: flex-end
+    &__text
+        font-size: 30px
+        font-family: 'Montserrat-600'
+        line-height: 130%
+        margin-bottom: 25px
+        span
+            display: none
+        &:last-of-type
+            margin-bottom: 0
+    &__title
+        text-transform: uppercase
+        text-align: center
+        margin-bottom: 65px
+        span
+            color: #CC0609
+    &__box
+        max-width: 1265px
+        margin-left: auto

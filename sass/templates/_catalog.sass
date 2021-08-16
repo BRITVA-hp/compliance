@@ -1,0 +1,29 @@
+.catalog
+    background-image: url(../img/catalog/img.png)
+    background-repeat: no-repeat
+    background-position-x: 100%
+    background-position-y: center
+    background-size: contain
+    padding-bottom: 150px
+    &__row
+        display: grid
+        grid-template-columns: repeat(auto-fill, 276px)
+        grid-gap: 80px
+        max-width: 988px
+    &__card
+        width: 276px
+        height: 238px
+        &__img
+            width: 130px
+            height: 130px
+            display: flex
+            align-items: center
+            justify-content: center
+            background-color: #EAEFFF
+            border-radius: 50%
+            margin: auto
+            margin-bottom: 27px
+        &__text
+            text-align: center
+            font-size: 24px
+            line-height: 120%
