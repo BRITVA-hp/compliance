@@ -1,0 +1,76 @@
+.view
+    padding-top: 150px
+    padding-bottom: 150px
+    background-image: url(../img/view/bg.png)
+    background-repeat: no-repeat
+    background-position: center
+    &__img
+        position: absolute
+        left: -40px
+        bottom: -70px
+        &--mob
+            display: none
+    &__button
+        background-color: #101C51
+        border-radius: 5px
+        color: #fff
+        padding: 22px 140px
+        margin: auto
+        display: block
+        &:hover
+            background-color: #2a376d
+    &__text
+        font-size: 30px
+        font-family: 'Montserrat-600'
+        margin-bottom: 25px
+        text-align: center
+    &__container
+        background-color: #FFFFFF
+        border: 1px solid #101C51
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6)
+        border-radius: 10px
+        padding: 70px 40px 60px
+        position: relative
+    &__row
+        display: grid
+        grid-template: 1fr 1fr / 515px 515px
+        justify-content: center
+        column-gap: 20px
+        row-gap: 60px
+        margin-bottom: 90px
+    &__input
+        background-color: #FFFFFF
+        border: 1px solid #1C275A
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 5px
+        padding: 22px
+        color: #101C51
+        font-family: 'Montserrat-600'
+        width: 100%
+    &__input-group
+        width: 515px
+    &__label
+        display: block
+        margin-bottom: 22px
+        font-family: 'Montserrat-600'
+    &__select
+        background-color: #FFFFFF
+        border: 1px solid #1C275A
+        box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25)
+        border-radius: 5px
+        padding: 22px
+        color: #101C51
+        appearance: none
+        background-image: url(../img/view/arrow.png)
+        background-repeat: no-repeat
+        background-position-x: calc( 100% - 22px )
+        background-position-y: center
+        font-family: 'Montserrat-600'
+        width: 100%
+        cursor: pointer
+        &:focus
+            outline: none
+    &__title
+        text-align: center
+        line-height: 110%
+        margin-bottom: 70px

@@ -1,0 +1,64 @@
+.scheme
+    background-image: url(../img/scheme/bg.png)
+    background-repeat: no-repeat
+    background-position-x: right
+    background-position-y: center
+    background-size: contain
+    padding-top: 150px
+    padding-bottom: 150px
+    &__row
+        height: 305px
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+    &__line
+        position: absolute
+        max-width: none
+        right: 0
+        &--mob
+            display: none
+        &--1
+            bottom: 90px
+            transform: translateX(99%)
+        &--2
+            top: 50%
+            transform: translateX(101%)
+        &--3
+            bottom: 50%
+            transform: translateX(101%)
+    &__card
+        width: 330px
+        height: 205px
+        &--bottom
+            align-self: flex-end
+        &__header
+            width: 145px
+            height: 145px
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 72px
+            line-height: 100%
+            font-family: 'Montserrat-900'
+            margin: auto
+            margin-bottom: 30px
+            border-radius: 50%
+            background-color: #fff
+            position: relative
+            &::before
+                content: ''
+                position: absolute
+                left: -2px
+                top: -2px
+                right: -2px
+                bottom: -2px
+                background: linear-gradient(129.91deg, #101C51 14.58%, #101C51 45.52%, #FFF456 57.22%)
+                border-radius: 50%
+                z-index: -1
+        &__text
+            text-align: center
+    &__title
+        text-align: center
+        margin-bottom: 125px
+        span
+            color: #CC0609

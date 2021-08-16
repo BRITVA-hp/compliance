@@ -1,0 +1,33 @@
+.cases
+    padding-top: 120px
+    padding-bottom: 120px
+    background-color: #101C51
+    color: #fff
+    position: relative
+    overflow: hidden
+    &__img
+        position: absolute
+        left: 0
+        max-width: none
+        &--1
+            top: 0
+        &--2
+            bottom: 0
+    &__row
+        display: grid
+        grid-template-columns: repeat(auto-fill, 365px)
+        justify-content: space-around
+        column-gap: 40px
+        row-gap: 115px
+    &__card
+        width: 365px
+        height: 255px
+        &__img
+            display: block
+            margin: auto
+            margin-bottom: 24px
+        &__text
+            text-align: center
+    &__title
+        margin-bottom: 65px
+        text-align: center
