@@ -34,7 +34,7 @@
                 <div class="main__box">
                     <h1 class="main__title">НУЖНА ПОМОЩЬ В ПОЛУЧЕНИИ КРЕДИТА?</h1>
                     <p class="main__text">Поможем получить кредит с любой кредитной историей и неофициальным трудоустройством! Даже если все банки уже отказали.</p>
-                    <button class="button main__button">Получить деньги</button>
+                    <button data-modalGame class="button main__button">Получить деньги</button>
                 </div>
 
             </div>
@@ -175,7 +175,7 @@
 
             <p class="lifehack__text">Хочешь получить кредит самостоятельно? <br> Жми кнопку "Получить кредит" и мы пришлём тебе <br> <span>три 100% работающих лайфхака!</span></p>
 
-            <button class="button lifehack__button">Получить деньги</button>
+            <button data-modal class="button lifehack__button">Получить деньги</button>
 
         </section>
         <!-- /.section lifehack -->
@@ -344,7 +344,7 @@
 
         <section class="section view">
 
-            <form action="#" class="container view__container">
+            <div class="container view__container">
 
                 <img src="img/view/img.png" alt="money" class="view__img">
 
@@ -383,7 +383,7 @@
                     </div>
 
                     <div class="view__input-group">
-                        <label class="view__label" for="commission">Наша коммисия</label>
+                        <label class="view__label" for="commission">Наша коммиссия</label>
                         <input disabled type="text" id="commission" class="view__input">
                     </div>
 
@@ -393,9 +393,9 @@
 
                 <p class="view__text">Оставьте заявку, и мы подберем для вас подходящие варианты!</p>
 
-                <button class="button view__button">Оставить заявку</button>
+                <button data-modal class="button view__button">Оставить заявку</button>
 
-            </form>
+            </div>
 
         </section>
         <!-- /.section view -->
@@ -464,7 +464,7 @@
     </div>
     <!-- /.modalGame -->
 
-    <div class="modal">
+    <div class="modal modal-simple">
 
         <div class="modal__dialog">
 
@@ -505,6 +505,8 @@
 
     </div>
     <!-- /.modal modal--visible modal-success -->
+
+    <script src="js/script.js"></script>
     
 </body>
 </html>

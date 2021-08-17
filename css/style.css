@@ -1059,7 +1059,9 @@ img {
       display: flex;
       align-items: center;
       justify-content: center;
-      position: relative; }
+      position: relative;
+      transition: 3s;
+      transition-timing-function: ease-out; }
     .modal-game__roll__arrow {
       position: absolute;
       top: 50%;
