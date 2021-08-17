@@ -64,6 +64,66 @@
             bottom: -30px
 
 @media screen and ( max-width: 1300px )
+    .modal-game
+        align-items: flex-start
+        padding-top: 0 !important
+        overflow: auto
+        &__roll
+            left: 50%
+            top: 93px
+            transform: translateX(-50%)
+        &__close
+            width: 25px
+            top: 14px
+            right: 20px
+        &__row
+            flex-direction: column
+        &__dialog
+            justify-content: center
+            transform: none
+            width: auto
+            height: auto
+            background-size: cover
+            padding: 40px 20px
+        &__footer
+            font-size: 10px
+            text-align: center
+            max-width: 285px
+        &__button
+            font-size: 18px
+            margin-left: auto
+            margin-right: auto
+            display: block
+            width: 270px
+            padding: 15px 0
+            margin-bottom: 20px
+        &__title
+            font-size: 30px
+            text-align: center
+            margin-bottom: 345px
+        &__text
+            font-size: 15px
+            text-align: center
+            margin-left: auto
+            margin-right: auto
+            max-width: 280px
+        &__input
+            font-size: 14px
+            margin-right: 0
+            margin-bottom: 20px
+            width: 270px
+            &:last-of-type
+                margin-bottom: 0
+        &__roll
+            &__wheel
+                display: none
+                &--mob
+                    display: block
+            &__arrow
+                display: none
+                &--mob
+                    display: block
+
     .we
         &__box
             max-width: 600px
@@ -149,6 +209,54 @@
             max-width: 920px
 
 @media screen and ( max-width: 992px )
+    .modal
+        &-success
+            &__close
+                width: 25px
+                top: 10px
+                right: 10px
+            &__text
+                font-size: 14px
+            &__dialog
+                width: 320px
+                height: 486px
+                padding-top: 176px
+            &__title
+                font-size: 36px
+                margin-bottom: 15px
+
+        &__close
+            width: 25px
+            top: 8px 
+            right: 10px
+        &__button
+            padding: 18px 0
+        &__input
+            &--simple
+                font-size: 14px
+        &__box
+            margin-right: 0
+        &__dialog
+            flex-direction: column
+            align-items: center
+            padding: 45px 20px
+        &__form
+            border-radius: 0
+            background: transparent
+            padding: 0
+            border: none
+        &__title
+            font-size: 30px
+            margin-bottom: 15px
+            text-align: center
+        &__text
+            font-size: 14px
+            margin-bottom: 18px
+            text-align: center
+        &__dialog
+            width: 320px
+            height: auto
+
     .footer
         padding-top: 40px
         padding-bottom: 40px
@@ -484,3 +592,10 @@
             margin-bottom: 280px
         &__img
             bottom: 0
+
+@media screen and ( max-height: 600px )
+    .modal
+        align-items: flex-start
+        padding-top: 20px
+        padding-bottom: 20px
+        overflow: auto

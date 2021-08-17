@@ -429,6 +429,82 @@
 
     </footer>
     <!-- /.footer section -->
+
+    <div class="modal modal-game">
+
+        <form action="#" class="modal-game__dialog">
+
+            <img src="img/modalGame/close.png" alt="close" class="modal-game__close">
+
+            <div class="modal-game__roll">
+                <div class="modal-game__roll__box">
+                    <div class="modal-game__roll__wrap">
+                        <img class="modal-game__roll__wheel" src="img/modalGame/roll.png" alt="roll">
+                        <img class="modal-game__roll__wheel--mob" src="img/modalGame/rollMob.png" alt="roll">
+                    </div>
+                    <img class="modal-game__roll__arrow" src="img/modalGame/arrow.png" alt="arrow">
+                    <img class="modal-game__roll__arrow--mob" src="img/modalGame/arrowMob.png" alt="arrow">
+                </div>
+            </div>
+
+
+            <div class="modal-game__box">
+                <h3 class="modal-game__title">МНЕ ПОВЕЗЕТ!</h3>
+                <p class="modal-game__text">Крутите колесо и получайте скидки и подарки от “Одобрение”</p>
+                <div class="row modal-game__row">
+                    <input placeholder="Имя" type="text" class="modal-game__input modal__input">
+                    <input placeholder="Телефон" type="tel" class="modal-game__input modal__input">
+                </div>
+                <button class="button modal-game__button">Крутить колесо удачи</button>
+                <p class="modal-game__footer">Нажимая на кнопку “КРУТИТЬ КОЛЕСО УДАЧИ” Вы даете согласие на хранение и обработку своих персональных данных, а также принимаете нашу <br> <a href="#">политику конфиденциальности</a></p>
+            </div>
+
+        </form>
+
+    </div>
+    <!-- /.modalGame -->
+
+    <div class="modal">
+
+        <div class="modal__dialog">
+
+            <img class="modal__close" src="img/close.png" alt="close">
+
+            <div class="modal__box">
+                <h3 class="modal__title">Узнать ставку!</h3>
+                <div class="modal__text">Для получения заявок, оставьте номер телефона и ваше имя. <br> Наш менеджер расскажет вам все подробнее.</div>
+            </div>
+
+            <form action="#" class="modal__form">
+                <input placeholder="Ваше имя" type="text" class="modal__input modal__input--simple">
+                <input placeholder="+7 (___) ___ - __ - __" type="text" class="modal__input modal__input--simple">
+                <label class="modal__label" for="check">
+                    <span>Согласие на обработку своих персональных данных</span>
+                    <input class="modal__check" id="check" type="checkbox">
+                    <span class="modal__ok"></span>
+                </label>
+                <button class="button modal__button">Оставить заявку</button>
+            </form>
+
+        </div>
+
+    </div>
+    <!-- /.modal modal--visible -->
+
+    <div class="modal modal-success">
+
+        <div class="modal-success__dialog">
+
+            <img class="modal-success__close" src="img/close.png" alt="close">
+
+            <h3 class="modal-success__title">Заявка <br> отправлена</h3>
+
+            <p class="modal-success__text">Мы получили вашу заявку. <br> Наш менеджер свяжится с вами.</p>
+
+        </div>
+
+    </div>
+    <!-- /.modal modal--visible modal-success -->
     
 </body>
 </html>
