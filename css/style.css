@@ -1060,8 +1060,7 @@ img {
       align-items: center;
       justify-content: center;
       position: relative;
-      transition: 3s;
-      transition-timing-function: ease-out; }
+      transition: transform 10s cubic-bezier(0.075, 0.82, 0.165, 1); }
     .modal-game__roll__arrow {
       position: absolute;
       top: 50%;

@@ -63,9 +63,66 @@ document.addEventListener('DOMContentLoaded', () => {
     function rotate(selector) {
         const roll = document.querySelector(selector);
 
-        roll.style.transform = `rotate(${(360 * 5 + 22.5) + (45 * getRandomArbitrary(0, 9))}deg)`;
+        roll.style.transform = `rotate(${(360 * 5) + getRandomArbitrary(0, 361)}deg)`;
     }
 
-    // rotate('.modal-game__roll__wrap');
+    rotate('.modal-game__roll__wrap');
+
+    // calc
+
+    function calc() {
+        const story = document.querySelector('#story'),
+              work = document.querySelector('#work'),
+              sum = document.querySelector('#sum'),
+              commission = document.querySelector('#commission');
+
+        const calcCommission = () => {
+            if (story.selectedIndex == 1 && work.selectedIndex == 1) {
+                commission.value = 'от 2%';
+            } else if (story.selectedIndex == 2 && work.selectedIndex == 1) {
+                commission.value = 'от 5%';
+            } else if (story.selectedIndex == 3 && work.selectedIndex == 1) {
+                commission.value = 'от 7%';
+            } else if (story.selectedIndex == 1 && work.selectedIndex == 2) {
+                commission.value = 'от 3%';
+            } else if (story.selectedIndex == 2 && work.selectedIndex == 2) {
+                commission.value = 'от 5%';
+            } else if (story.selectedIndex == 3 && work.selectedIndex == 2) {
+                commission.value = 'от 7%';
+            } else if (story.selectedIndex == 1 && work.selectedIndex == 3) {
+                commission.value = 'от 5%';
+            } else if (story.selectedIndex == 2 && work.selectedIndex == 3) {
+                commission.value = 'от 7%';
+            } else if (story.selectedIndex == 3 && work.selectedIndex == 3) {
+                commission.value = 'от 8%';
+            }
+        };
+
+        story.addEventListener('change', () => {
+            if (story.selectedIndex != 0 && work.selectedIndex != 0 && sum.selectedIndex != 0) {
+                calcCommission();
+            } else {
+                commission.value = '';
+            }
+        });
+
+        work.addEventListener('change', () => {
+            if (story.selectedIndex != 0 && work.selectedIndex != 0 && sum.selectedIndex != 0) {
+                calcCommission();
+            } else {
+                commission.value = '';
+            }
+        });
+
+        sum.addEventListener('change', () => {
+            if (story.selectedIndex != 0 && work.selectedIndex != 0 && sum.selectedIndex != 0) {
+                calcCommission();
+            } else {
+                commission.value = '';
+            }
+        });
+    }
+
+    calc();
 
 });
